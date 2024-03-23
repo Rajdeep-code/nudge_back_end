@@ -1,0 +1,51 @@
+{
+  "name": "nudge-back-end",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "private": true,
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "Rajdeep-dev-code",
+    "email": "rajdeepk@lecturenotes.in"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^12.0.0",
+    "yarn": ">= 0.18.0"
+  },
+  "scripts": {
+    "test": "yarn run lint && yarn run mocha",
+    "lint": "eslint src/. test/. --config .eslintrc.json --fix",
+    "dev": "nodemon src/",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ],
+    "ignore": []
+  },
+  "dependencies": {
+    "@feathersjs/authentication": "^4.5.11",
+    "@feathersjs/authentication-local": "^4.5.11",
+    "@feathersjs/authentication-oauth": "^4.5.11",
+    "feathers-mongoose": "^8.3.1"
+  },
+  "devDependencies": {
+    "axios": "^1.6.8",
+    "eslint": "^7.17.0",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.6"
+  }
+}
